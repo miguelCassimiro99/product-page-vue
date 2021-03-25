@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue - Intro</title>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <div id="app">
+        <div class="cart">
+            <span>Cart({{ cart.length }})</span>
+        </div>
+        <product :premium="premium" @add-to-cart="updateCart" @remove-from-cart="removeItem"></product>
+    </div>
+
+    <script src=" https://unpkg.com/vue "></script>
+    <script src="./main.js "></script>
+</body>
+
+</html>
